@@ -11,7 +11,7 @@ MEMORY_GB=2
 # Azure DevOps environment variables
 AZP_TOKEN="3xxxxxxxxxxxxxxxxxxxxxxxxxxx3Ajx"
 AZP_POOL="test"
-AZP_NAME="cli"
+AZP_AGENT_NAME="cli"
 
 # Get subnet resource ID (required for ACI deployment in VNet)
 SUBNET_ID=$(az network vnet subnet show \
