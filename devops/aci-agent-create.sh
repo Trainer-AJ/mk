@@ -34,6 +34,6 @@ az container create \
   --vnet $VNET_NAME \
   --subnet $SUBNET_NAME \
   --location $LOCATION \
-  --environment-variables AZP_URL=$AZP_URL AZP_TOKEN=$AZP_TOKEN AZP_POOL=$AZP_POOL AZP_NAME=$AZP_NAME \
+  --environment-variables AZP_URL=$AZP_URL AZP_TOKEN=$AZP_TOKEN AZP_POOL=$AZP_POOL AZP_AGENT_NAME=$AZP_AGENT_NAME \
   --restart-policy OnFailure \
   --output table
