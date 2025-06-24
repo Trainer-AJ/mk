@@ -1,5 +1,5 @@
 # Variables (replace these with your actual values)
-RESOURCE_GROUP="test"
+RESOURCE_GROUP="tet"
 LOCATION="centralindia"
 VNET_NAME="app-srv"
 SUBNET_NAME="pipeline-agent"
@@ -9,6 +9,7 @@ CPU_CORES=1
 MEMORY_GB=2
 
 # Azure DevOps environment variables
+AZP_URL = "url"
 AZP_TOKEN="3xxxxxxxxxxxxxxxxxxxxxxxxxxx3Ajx"
 AZP_POOL="test"
 AZP_AGENT_NAME="cli"
@@ -33,6 +34,6 @@ az container create \
   --vnet $VNET_NAME \
   --subnet $SUBNET_NAME \
   --location $LOCATION \
-  --environment-variables AZP_TOKEN=$AZP_TOKEN AZP_POOL=$AZP_POOL AZP_NAME=$AZP_NAME \
+  --environment-variables AZP_URL=$AZP_URL AZP_TOKEN=$AZP_TOKEN AZP_POOL=$AZP_POOL AZP_NAME=$AZP_NAME \
   --restart-policy OnFailure \
   --output table
