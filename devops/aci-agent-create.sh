@@ -9,7 +9,7 @@ CPU_CORES=1
 MEMORY_GB=2
 
 # Azure DevOps environment variables
-AZP_URL = "url"
+AZP_URL="url"
 AZP_TOKEN="3xxxxxxxxxxxxxxxxxxxxxxxxxxx3Ajx"
 AZP_POOL="test"
 AZP_AGENT_NAME="cli"
