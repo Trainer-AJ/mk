@@ -1,5 +1,5 @@
 {
-  "scriptFile": "function-2.py",
+  "scriptFile": "function2.py",
   "bindings": [
     {
       "name": "mytimer",
