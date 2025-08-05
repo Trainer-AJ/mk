@@ -4,7 +4,9 @@ from datetime import datetime
 
 def main():
     print("Function 1 started.")
-    df = pd.read_csv("sample_data.csv")
+    csv_path = os.path.join(os.path.dirname(__file__), '..', 'shared', 'sample_data.csv')
+    df = pd.read_csv(csv_path)
+
     df['value_squared'] = df['value'] ** 2
     print("Function 1 - DataFrame with squared values:\n", df)
 
