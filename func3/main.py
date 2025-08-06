@@ -2,6 +2,7 @@ import datetime
 import logging
 import time
 import os
+import azure.functions as func  # ✅ This import is required
 
 def main(mytimer: func.TimerRequest) -> None:
     utc_timestamp = datetime.datetime.utcnow().replace(tzinfo=datetime.timezone.utc).isoformat()
